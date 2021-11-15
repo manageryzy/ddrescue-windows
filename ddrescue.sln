@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ddrescue-windows", "ddrescue-windows\ddrescue-windows.vcxproj", "{FCAED766-108D-4ECB-9462-C10EFC6D0C65}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8E161372-5679-4AFA-A8F7-F78A9DAA990E} = {8E161372-5679-4AFA-A8F7-F78A9DAA990E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libddrescue", "libddrescue\libddrescue.vcxproj", "{8E161372-5679-4AFA-A8F7-F78A9DAA990E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCAED766-108D-4ECB-9462-C10EFC6D0C65}.Debug|x64.ActiveCfg = Debug|x64
+		{FCAED766-108D-4ECB-9462-C10EFC6D0C65}.Debug|x64.Build.0 = Debug|x64
+		{FCAED766-108D-4ECB-9462-C10EFC6D0C65}.Debug|x86.ActiveCfg = Debug|Win32
+		{FCAED766-108D-4ECB-9462-C10EFC6D0C65}.Debug|x86.Build.0 = Debug|Win32
+		{FCAED766-108D-4ECB-9462-C10EFC6D0C65}.Release|x64.ActiveCfg = Release|x64
+		{FCAED766-108D-4ECB-9462-C10EFC6D0C65}.Release|x64.Build.0 = Release|x64
+		{FCAED766-108D-4ECB-9462-C10EFC6D0C65}.Release|x86.ActiveCfg = Release|Win32
+		{FCAED766-108D-4ECB-9462-C10EFC6D0C65}.Release|x86.Build.0 = Release|Win32
+		{8E161372-5679-4AFA-A8F7-F78A9DAA990E}.Debug|x64.ActiveCfg = Debug|x64
+		{8E161372-5679-4AFA-A8F7-F78A9DAA990E}.Debug|x64.Build.0 = Debug|x64
+		{8E161372-5679-4AFA-A8F7-F78A9DAA990E}.Debug|x86.ActiveCfg = Debug|Win32
+		{8E161372-5679-4AFA-A8F7-F78A9DAA990E}.Debug|x86.Build.0 = Debug|Win32
+		{8E161372-5679-4AFA-A8F7-F78A9DAA990E}.Release|x64.ActiveCfg = Release|x64
+		{8E161372-5679-4AFA-A8F7-F78A9DAA990E}.Release|x64.Build.0 = Release|x64
+		{8E161372-5679-4AFA-A8F7-F78A9DAA990E}.Release|x86.ActiveCfg = Release|Win32
+		{8E161372-5679-4AFA-A8F7-F78A9DAA990E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10F4F683-C76F-4F6E-BF03-ABCA2CC5EE02}
+	EndGlobalSection
+EndGlobal
