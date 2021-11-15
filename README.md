@@ -20,6 +20,8 @@
 DDRESCUE-WINDOWS
 ===
 
+[![MSBuild](https://github.com/manageryzy/ddrescue-windows/actions/workflows/msbuild.yml/badge.svg)](https://github.com/manageryzy/ddrescue-windows/actions/workflows/msbuild.yml)
+
 Unoffical port ddrescue to Windows platform.
 
 ## Usage
