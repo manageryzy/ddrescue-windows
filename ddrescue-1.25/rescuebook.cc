@@ -90,14 +90,14 @@ bool Rescuebook::extend_outfile_size()
   if( min_outfile_size > 0 || sparse_size > 0 )
     {
     const long long min_size = std::max( min_outfile_size, sparse_size );
-    const long long size = lseek( odes_, 0, SEEK_END );
+    const long long size = LseekFixed( odes_, 0, SEEK_END );
     if( size < 0 ) return false;
     if( min_size > size )
       {
       int ret;
       do ret = ftruncate( odes_, min_size );
         while( ret != 0 && errno == EINTR );
-      if( ret != 0 || lseek( odes_, 0, SEEK_END ) != min_size )
+      if( ret != 0 || LseekFixed( odes_, 0, SEEK_END ) != min_size )
         {
         const uint8_t zero = 0;		// if ftruncate fails, write a zero
         if( writeblockp( odes_, &zero, 1, min_size - 1 ) != 1 ) return false;

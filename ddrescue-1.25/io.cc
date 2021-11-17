@@ -78,7 +78,7 @@ int readblockp( const int fd, uint8_t * const buf, const int size,
   {
   int sz = 0;
   errno = 0;
-  if( lseek( fd, pos, SEEK_SET ) >= 0 )
+  if( LseekFixed( fd, pos, SEEK_SET ) >= 0 )
     while( sz < size )
       {
       errno = 0;
@@ -99,7 +99,7 @@ int writeblockp( const int fd, const uint8_t * const buf, const int size,
   {
   int sz = 0;
   errno = 0;
-  if( lseek( fd, pos, SEEK_SET ) >= 0 )
+  if( LseekFixed( fd, pos, SEEK_SET ) >= 0 )
     while( sz < size )
       {
       errno = 0;
